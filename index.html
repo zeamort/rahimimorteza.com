@@ -1,45 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css">
+
     <title>Morteza Rahimi</title>
+
+    <!-- Classic computer-style font (VT323) from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=VT323&display=swap" 
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome for icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">HOBBIES</a></li>
-            <li><a href="#">PROJECTS</a></li>
-            <li><a href="#">EDUCATION</a></li>
-            <li><a href="#">WORK EXPERIENCE</a></li>
-            <li><a href="#">CONTACT</a></li>
-        </ul>
-    </nav>
-    <section class="about">
-        <div class="blurb">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In commodi expedita recusandae deleniti, suscipit magni, atque error ut eos tenetur repellat similique itaque quidem ullam aperiam voluptates enim perspiciatis ipsum adipisci sit iste, voluptatem quo sed. Suscipit quibusdam accusantium nam cumque? Earum ullam officiis vitae commodi aliquid at nemo beatae itaque totam quidem qui explicabo voluptatibus, sapiente harum veritatis, blanditiis dignissimos. Ex rerum officiis minus non magni accusamus nam expedita quod, modi accusantium aperiam magnam corporis molestiae nihil est unde corrupti, nostrum dolorem omnis iste asperiores fuga totam? Nobis, harum eaque, ea recusandae dolor corporis corrupti, id deleniti sint impedit vitae. Consequuntur eius voluptatum a, autem adipisci illum rem debitis harum repellat voluptates quasi! Facere, ducimus ipsa? Quo, quae aperiam?</p>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, commodi! Quis odio aperiam unde repudiandae, voluptatem quod cum fuga nam id animi dolorem, praesentium voluptatum soluta odit magni. Facere veniam ducimus officiis sed, tempore placeat ab rem nihil quae ea impedit natus fuga! Sequi, quasi perspiciatis a numquam provident dolores, quae deserunt debitis beatae, facere voluptas. Eveniet laboriosam, velit provident vero fuga nostrum, recusandae, officia inventore corrupti cumque dignissimos repellat maiores? Reiciendis harum aut necessitatibus possimus laborum ducimus suscipit laudantium!</p>
+    <div class="container">
+        <div class="intro">
+            <h1>Morteza Rahimi</h1>
+            <p class="role">Software Developer @
+                <a href="https://www.portable-electric.com" target="_blank" rel="noopener">Portable Electric</a>
+            </p>
+            <p class="location">Vancouver, Canada</p>
         </div>
-        <img src="./Images/me.jpg" alt="Image of myself and my family">
-    </section>
-    <section class="hobbies">
 
-    </section>
-    <section class="projects">
+        <div class="links">
+            <!-- LinkedIn -->
+            <a 
+                href="https://www.linkedin.com/in/morteza-rm/" 
+                target="_blank" 
+                rel="noopener"
+            >
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <!-- GitHub -->
+            <a 
+                href="https://github.com/zeamort" 
+                target="_blank" 
+                rel="noopener"
+            >
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
 
-    </section>
-    <section class="education">
+        <img 
+            src="Images/me.jpg"
+            alt="Portrait of Me" 
+            class="portrait"
+        />
 
-    </section>
-    <section class="work-experience">
+        <div class="currently">
+            <h2>Currently:</h2>
+            <p><strong>Studying:</strong> ASP.NET Database Applications</p>
+            <p><strong>Reading:</strong> <em>The Last Wish by Andrzej Sapkowsk</em></p>
+            <p><strong>Listening:</strong> <em>99 Nights by Charlotte Cardin</em></p>
+        </div>
 
-    </section>
-    <footer class="contact">
-        
-    </footer>
+        <footer>
+            &copy; <script>document.write(new Date().getFullYear())</script> Morteza Rahimi
+        </footer>          
+  </div>
 </body>
 </html>
