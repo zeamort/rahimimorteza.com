@@ -1,105 +1,88 @@
-/*Assigning the more intuitive box-sizing model (border-box)*/
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-/*Remove all pre-assigned margins*/
-* {
+/* Body & Font */
+body {
     margin: 0;
+    padding: 2rem;
+    background-color: #dfdcdc;
+    color: #333;
+    font-family: 'VT323', monospace;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    text-align: center;
 }
-
-/*Allow percentage based heights in my application*/
-html, body {
-    height: 100%;
-}
-
-/*Add accessible line-height and improve text rendering*/
-body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-}
-
-/*Better media defaults*/
-img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-}
-
-/*Remove built-in form typography styles*/
-input, button, textarea, select {
-    font: inherit;
-}
-
-/*Avoid text overflow*/
-p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-}
-
-/*Create a root stacking context*/
-#root, #__next {
-    isolation: isolate;
-}
-
-/*Start of my CSS*/
-
-/*Declare and initialize color variables*/
-:root {
-    --main-bg-color: #31748f;
-    --main-text-color: #f4ede8;
-    --secondary-color-light: #e0ab1a;
-}
-
-/*Assign default font family and font color.*/
-*{
-    font-family: 'IBM Plex Mono', monospace;
-    color: var(--main-text-color);
-}
-
-/*Set background color.*/
-body {
-    background: var(--main-bg-color);
-    display: flex;
-    flex-direction: column;
-}
-
-/*Navigation*/
-nav {
-    position:sticky;
-    top: 0;
-    background-color: var(--main-bg-color);
-    padding: 10px;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 1.5rem;
-    list-style-type: none;
-}
-
-nav a {
+  
+  /* Container */
+  .container {
+    width: 70%;          /* so it scales to fill most of the viewport width */
+    max-width: 600px;    /* or 400px if you prefer a narrower layout on large screens */
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  /* Intro */
+  .intro {
+    margin-bottom: 0.5rem;
+  }
+  .intro h1 {
+    margin: 0.2rem 0;
+    font-size: 3.5rem;
+  }
+  .intro .role {
+    font-size: 1.3rem;
+    margin: 0.2rem 0;
+  }
+  .intro .location {
+    color: #555;
+    margin: 0.2rem 0;
+  }
+  
+  /* Portrait */
+  .portrait {
+    width: 100%;          /* fills container's width */
+    max-width: 300px;     /* optional limit for large screens */
+    aspect-ratio: 1 / 1;  /* ensures a 1:1 square */
+    object-fit: cover;    /* crops to fill circle */
+    border-radius: 50%;
+    margin: 3rem 0;
+  }
+  
+  
+  
+  
+  /* Links (icons) */
+  .links {
+    margin: 1rem 0;
+  }
+  .links a {
+    color: #333;
+    margin: 0 0.75rem;
     text-decoration: none;
-}
-
-nav a:hover {
-    font-size: larger;
-    color: var(--secondary-color-light)
-}
-
-
-/*about*/
-.about {
-    display:flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-}
-.blurb {
-    margin: 0 3%;
-}
-img {
-    border: solid var(--main-text-color) 5px;
-    margin:0 3% 5% 3%;
-    width: 300px;
-}
-
-/*hobbies*/
+    font-size: 1.8rem; 
+    display: inline-block;
+    text-decoration: none;
+  }  
+  .links a:hover {
+    color: #0077B5; 
+  }
+  
+  /* Currently Section */
+  .currently {
+    margin-top: 2rem;
+  }
+  .currently h2 {
+    margin-bottom: 1rem;
+  }
+  .currently p {
+    margin: 0.5rem 0;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 5rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  a, a:visited {
+    text-decoration: none;
+    color: #333; /* or any color you like */
+  }
+  
